@@ -16,7 +16,7 @@ Below setting worked for me.
     Read this:
 	```https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html#example-bucket-policies-use-case-4```
 	
-	Example:
+	Example for Production
 	```
 	{
         "Id": "policy id from policy generator here",
@@ -41,6 +41,25 @@ Below setting worked for me.
         ]
     }
 	```
+	
+	Example for Development - just remove condition to accept any
+		```
+    	{
+            "Id": "policy id from policy generator here",
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "some id from policy generator here",
+                    "Action": [
+                        "s3:GetObject"    <--- actions
+                    ],
+                    "Effect": "Allow",    <--- allow actions
+                    "Resource": "arn:aws:s3:::test-bucket-123-hello/*",  <--- your bucket arn
+                    "Principal": "*"  <--- * means anybody to access it.
+                }
+            ]
+        }
+    	```
 	
 6. CORS configuration
 
