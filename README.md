@@ -1,6 +1,6 @@
-# aws S3 Bucket Policy Example
-
-This is just to test S3 bucket policy to restrict the access to a bucket by domain.
+# AWS S3 - Bucket Policy and CORS configuration Example
+### Purpose: Restrict access to a S3 bucket by specific domain only.
+Below setting worked for me.
 
 1. Go to s3 in aws and create a bucket.
 2. Place some image and video files in the bucket.
