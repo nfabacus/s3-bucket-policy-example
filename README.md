@@ -61,7 +61,7 @@ Below setting worked for me.
         }
     	```
 	
-6. CORS configuration
+6. CORS configuration - only for production.  You don't need this for development.
 
 	To avoid cors issue when your app is using s3 bucket operations, place below in the CORS configuration editor in 'CORS configuration'.
 	```
