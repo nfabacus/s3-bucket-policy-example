@@ -59,4 +59,5 @@ Below setting worked for me.
 	```
 
 Now you should be able to access the s3 bucket images/videos only via your domain.
+
 Example: https://nfabacus.github.io/s3-bucket-policy-example/
