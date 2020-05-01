@@ -69,6 +69,7 @@ Below setting worked for me.
 	<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">    
 	<CORSRule>
 	    <AllowedOrigin>https://nfabacus.github.io/s3-bucket-policy-example/</AllowedOrigin>  <--- replace this with your website origin url
+	    <AllowedMethod>GET</AllowedMethod>
 	    <AllowedMethod>PUT</AllowedMethod>
 	    <AllowedMethod>POST</AllowedMethod>
 	    <AllowedMethod>DELETE</AllowedMethod>
